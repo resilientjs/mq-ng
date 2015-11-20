@@ -29,7 +29,7 @@ vm.days = {sunday:0, monday:33, tuesday:0, wednesday:66, thursday:33, friday:99,
   vm.refreshData = function () {
     vm.data = [
     [vm.days.sunday, vm.days.monday, vm.days.tuesday, vm.days.wednesday, vm.days.thursday,  vm.days.friday, vm.days.saturday]
-    ]
+    ];
   };
 
   // // Simulate async data update
