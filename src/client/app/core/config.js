@@ -14,7 +14,7 @@
 
     var config = {
         appErrorPrefix: '[helloWorld Error] ',
-        appTitle: 'helloWorld'
+        appTitle: 'mq-ng'
     };
 
     core.value('config', config);

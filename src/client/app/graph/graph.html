@@ -1,0 +1,68 @@
+<section class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div class="widget-content user">
+                        <div class="row">
+                          <div class="widget wviolet">
+                            <div ht-widget-header title="Scores by Day" allow-collapse="true"></div>
+                                <div class="col-md-6">
+                                    <div class="widget-content text-center text-info">
+                                        <table class="table table-condensed table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Day</th>
+                                                    <th>Score</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td><input type="text" ng-model="days.sunday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Monday</td>
+                                                    <td><input type="text" ng-model="days.monday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Tuesday</td>
+                                                    <td><input type="text" ng-model="days.tuesday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Wednesday</td>
+                                                    <td><input type="text" ng-model="days.wednesday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Thursday</td>
+                                                    <td><input type="text" ng-model="days.thursday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Friday</td>
+                                                    <td><input type="text" ng-model="days.friday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Saturday</td>
+                                                    <td><input type="text" ng-model="days.saturday" ng-blur="refreshData()"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                 <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget wgreen">
+                        <div class="widget-content text-center text-info">
+                           <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series" chart-click="onClick"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
